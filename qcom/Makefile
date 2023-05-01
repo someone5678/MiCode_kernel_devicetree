@@ -81,6 +81,7 @@ dtbo-$(CONFIG_ARCH_WAIPIO) += waipio-rumi-overlay.dtbo \
 	zeus-sm8450-pm8008-overlay.dtbo \
 	cupid-sm8450-pm8008-overlay.dtbo \
 	ingres-sm8450-pm8008-overlay.dtbo \
+	zizhan-sm8450-pm8008-overlay.dtbo \
 	thor-sm8450-pm8008-overlay.dtbo \
 	loki-sm8450-pm8008-overlay.dtbo \
 	waipio-cdp-pm8008-overlay.dtbo \
@@ -94,6 +95,7 @@ waipio-mtp-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waip
 zeus-sm8450-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
 cupid-sm8450-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
 ingres-sm8450-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
+zizhan-sm8450-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
 thor-sm8450-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
 loki-sm8450-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
 waipio-mtp-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
@@ -183,11 +185,13 @@ ifeq ($(CONFIG_BUILD_ARM64_DT_OVERLAY),y)
 dtbo-$(CONFIG_ARCH_DIWALI) += diwali-rumi-overlay.dtbo \
 	diwali-idp-overlay.dtbo \
 	diwali-idp-amoled-overlay.dtbo \
+	ziyi-sm7450-overlay.dtbo \
 	diwali-idp-usbc-overlay.dtbo
 
 diwali-idp-overlay.dtbo-base := diwali.dtb diwalip.dtb diwali-lte.dtb
 diwali-qrd-overlay.dtbo-base := diwali.dtb diwalip.dtb diwali-lte.dtb
 diwali-idp-amoled-overlay.dtbo-base := diwali.dtb diwalip.dtb diwali-lte.dtb
+ziyi-sm7450-overlay.dtbo-base := diwali.dtb diwalip.dtb diwali-lte.dtb
 else
 dtb-$(CONFIG_ARCH_DIWALI) += diwali-rumi.dtb \
 	diwali-idp.dtb \
@@ -227,8 +231,10 @@ dtbo-$(CONFIG_ARCH_CAPE) += cape-mtp-pm8008-overlay.dtbo \
         cape-cdp-pm8010-overlay.dtbo \
         cape-qrd-pm8010-overlay.dtbo \
         cape-cdp-qhd-pm8010-overlay.dtbo \
+	diting-sm8475-pm8008-overlay.dtbo \
 	unicorn-sm8475-pm8008-overlay.dtbo \
 	thor-sm8475-pm8008-overlay.dtbo \
+	zizhan-sm8475-pm8008-overlay.dtbo \
 	mayfly-sm8475-pm8008-overlay.dtbo
 
 cape-mtp-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
@@ -241,7 +247,9 @@ cape-mtp-nodisplay-pm8010-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 cape-cdp-pm8010-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 cape-cdp-qhd-pm8010-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 cape-qrd-pm8010-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
+diting-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 unicorn-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
+zizhan-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 thor-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 mayfly-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 
